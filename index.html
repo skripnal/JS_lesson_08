@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            list-style: none;
+        }
+
+        .menu-item {
+            cursor: pointer;
+        }
+
+        .submenu {
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <button id="buttonHidenText" type="button" onclick="hidenText()">Hiden text</button>
+    <br>
+    <textarea style="margin-top: 10px" id="text" cols="30" rows="10">text area</textarea>
+    <br>
+    <button id="selfHidenButton" type="button" style="margin-top: 10px" onclick="selfHiden()">selfHiden</button>
+    <ul class="menu">
+        <li class="menu-item">
+            Університет <span id="toggle1">+</span>
+            <ul class="submenu" id="submenu1">
+                <li>кафедра ІСМ</li>
+                <li>кафедра ЕСМ</li>
+                <li>кафедра політології</li>
+            </ul>
+        </li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
